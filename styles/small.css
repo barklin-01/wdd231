@@ -130,6 +130,68 @@ section{
     border-radius: 10px;
     padding: 10px;
 }
+/*Courses*/
+.course-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.course-buttons button {
+    padding: 10px 40px;
+    font-size: 1rem;
+    background-color: #426485;
+    color: var(--color2);
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.course-buttons button:hover {
+    background-color: #37603b;
+}
+#courses { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.course-card {
+    border: 2px solid var(--color1);
+    padding: 5px;
+    color: var(--color2);
+    text-align: center;
+}
+.course-card.completed {
+    background-color: #438b46;
+    color: white;
+}
+
+.course-card.not-completed {
+    background-color: #bcce61;
+    color: white;
+}
+.completed .status-icon {
+    color: green;
+    background-color: #fdf9f9;
+    margin-right: 10px;
+}
+
+.not-completed .status-icon {
+    color: red;
+    background-color: #fdf9f9;
+    margin-right: 10px;
+}
+.total{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color1);
+}
+
 /* --- Footer --- */
 /*redes*/
 footer .redes {

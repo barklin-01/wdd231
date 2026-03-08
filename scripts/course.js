@@ -5,11 +5,9 @@ const courses = [
         title: 'Introduction to Programming',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: [
-            'Python'
-        ],
-        completed: false
+        description: 'This course will introduce students to programming...',
+        technology: ['Python'],
+        completed: true
     },
     {
         subject: 'WDD',
@@ -17,12 +15,9 @@ const courses = [
         title: 'Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: [
-            'HTML',
-            'CSS'
-        ],
-        completed: false
+        description: 'This course introduces students to the World Wide Web...',
+        technology: ['HTML', 'CSS'],
+        completed: true
     },
     {
         subject: 'CSE',
@@ -30,11 +25,9 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: [
-            'Python'
-        ],
-        completed: false
+        description: 'CSE 111 students become more organized...',
+        technology: ['Python'],
+        completed: true
     },
     {
         subject: 'CSE',
@@ -42,10 +35,8 @@ const courses = [
         title: 'Programming with Classes',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: [
-            'C#'
-        ],
+        description: 'This course will introduce the notion of classes...',
+        technology: ['C#'],
         completed: false
     },
     {
@@ -54,13 +45,9 @@ const courses = [
         title: 'Dynamic Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
-        completed: false
+        description: 'This course builds on prior experience in Web Fundamentals...',
+        technology: ['HTML', 'CSS', 'JavaScript'],
+        completed: true
     },
     {
         subject: 'WDD',
@@ -68,12 +55,60 @@ const courses = [
         title: 'Frontend Web Development I',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        description: 'This course builds on prior experience...',
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: false
     }
-]
+];
+
+// seleccionar contenedores
+const coursesContainer = document.querySelector("#courses");
+const creditDisplay = document.querySelector("#totalCredits");
+
+// función para mostrar los cursos
+function displayCourses(courseList) {
+    coursesContainer.innerHTML = "";
+
+    courseList.forEach(course => {
+        const card = document.createElement("div");
+        card.classList.add("course-card");
+
+        // Crear el ícono de estado
+        const statusIcon = document.createElement("span");
+        statusIcon.classList.add("status-icon");
+        if (course.completed) {
+            statusIcon.textContent = "✓"; // visto
+            card.classList.add("completed"); // verde
+        } else {
+            statusIcon.textContent = "✗"; // X
+            card.classList.add("not-completed"); // rojo
+        }
+
+        // mostrar número y título del curso
+        const title = document.createElement("span");
+        title.textContent = `${course.subject} ${course.number}`;
+
+        // agregar al card
+        card.appendChild(statusIcon);
+        card.appendChild(title);
+
+        coursesContainer.appendChild(card);
+    });
+
+    // actualizar créditos totales según los cursos mostrados
+    displayCredits(courseList);
+}
+
+// función para calcular créditos con reduce
+function displayCredits(courseList) {
+    const total = courseList.reduce((sum, course) => sum + course.credits, 0);
+    creditDisplay.textContent = total;
+}
+
+// botones de filtro
+document.querySelector("#all").addEventListener("click", () => displayCourses(courses));
+document.querySelector("#wdd").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));
+document.querySelector("#cse").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
+
+// mostrar todos al cargar la página
+displayCourses(courses);
