@@ -1,0 +1,75 @@
+/* --- Large screens: Desktop / Tablet landscape --- */
+@media screen and (min-width: 768px) {
+
+    /* Header: mostrar el menú horizontalmente */
+    .links {
+        display: flex !important;
+        /* fuerza que siempre se vea en desktop */
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+        width: auto;
+        text-align: right;
+    }
+
+    .links a {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        color: var(--color2);
+    }
+
+    #menu-button {
+        display: none;
+        /* esconder botón hamburguesa */
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+
+    /* Main: secciones lado a lado */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* About + Foto */
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    section.about,
+    section.foto {
+        margin: 0;
+    }
+
+    .foto img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Courses section: más espacio y tarjetas más grandes */
+    #courses {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+    }
+
+    .course-buttons {
+        justify-content: flex-start;
+    }
+
+    /* Footer: iconos más grandes y alineación */
+    footer .redes {
+        gap: 30px;
+    }
+
+    footer .redes img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .foter,
+    #lastModified {
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+}
