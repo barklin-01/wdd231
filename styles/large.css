@@ -1,75 +1,49 @@
 /* --- Large screens: Desktop / Tablet landscape --- */
-@media screen and (min-width: 768px) {
-
-    /* Header: mostrar el menú horizontalmente */
+@media screen and (min-width: 768px) { 
+    /*Links*/
+    #menu-button {
+            display: none;
+        }
     .links {
-        display: flex !important;
-        /* fuerza que siempre se vea en desktop */
+        display: block;
         position: static;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: transparent;
         width: auto;
-        text-align: right;
+        background: none;
+        margin-right: 30px;
+    }
+
+    .links ul {
+        display: flex;
+        gap: 30px;
+
+        
     }
 
     .links a {
-        display: inline-block;
-        padding: 1rem 1.5rem;
-        color: var(--color2);
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--color2);
+        width: 120px;
+        text-align: center;
+    } 
+    /*main*/
+    main h1 {
+        grid-column: 1 / -1;
+        text-align: center;
     }
-
-    #menu-button {
-        display: none;
-        /* esconder botón hamburguesa */
-    }
-
-    header {
-        padding: 0 2rem;
-    }
-
-    /* Main: secciones lado a lado */
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        /* About + Foto */
         gap: 20px;
-        padding-top: 20px;
     }
-
-    section.about,
-    section.foto {
-        margin: 0;
+    main section:last-child {
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+    main section:nth-of-type(3) {
+    grid-column: 1 / 3;
     }
 
     .foto img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    /* Courses section: más espacio y tarjetas más grandes */
-    #courses {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 15px;
-    }
-
-    .course-buttons {
-        justify-content: flex-start;
-    }
-
-    /* Footer: iconos más grandes y alineación */
-    footer .redes {
-        gap: 30px;
-    }
-
-    footer .redes img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .foter,
-    #lastModified {
-        font-size: 1rem;
-        padding: 5px 0;
+    width: 250px;
     }
 }
