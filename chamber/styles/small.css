@@ -114,8 +114,6 @@ footer .redes {
     justify-content: center;
     gap: 20px;
     padding: 1rem 0;
-    background-color: none;
-    
 }
 
 footer .redes img {
@@ -206,7 +204,7 @@ button:hover {
 /*lista*/
 
 #membersContainer.list .member-card{
-    display: column;
+    display: block;
     margin-bottom: 20px;
     width: 100%;
 }
