@@ -1,0 +1,43 @@
+/* --- Large screens: Desktop / Tablet landscape --- */
+@media screen and (min-width: 768px) {
+
+    /*Links*/
+    #menu-button {
+        display: none;
+    }
+
+    .links {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+        margin-right: 20px;
+    }
+
+    .links ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .links a {
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--color2);
+        width: 120px;
+        text-align: center;
+    }
+
+    #membersContainer.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    /*Footer*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
