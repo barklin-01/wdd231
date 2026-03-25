@@ -1,0 +1,65 @@
+[
+    {
+        "nombre": "Hotel Sacha",
+        "direccion": "Av. Quito y Av. Amazonas, Otavalo City",
+        "telefono": "+593 687 252 3456",
+        "sitioWeb": "https://www.HOTEL-sacha.com",
+        "imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/515748011.jpg?k=284cc39dd51c7c7b58a22301f5082fd45089bb939bd7b7b1fcdcbb5fcf2f449e&o=",
+        "nivel": 2,
+        "descripcion": "Open 24h"
+    },
+    {
+        "nombre": "Hotel Otavalo",
+        "direccion": "Av. Roca y Av. Sucre, Otavalo City",
+        "telefono": "+593 990 123 4567",
+        "sitioWeb": "https://www.hotel-otavalo.com",
+        "imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/189352380.jpg?k=8a965646934c0be2c1b5e8e170667094168adc6b5fe089357d091e6587eb3241&o=",
+        "nivel": 3,
+        "descripcion": "Open 8am - 12pm"
+    },
+    {
+        "nombre": "Bongo",
+        "direccion": "Plaza de Ponchos, Otavalo City",
+        "telefono": "+593 987 654 3210",
+        "sitioWeb": "https://bongowings.com/",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGkBo0C27xDeN8VgS4M0DLVzY3kBxXgTg41w&s",
+        "nivel": 3,
+        "descripcion": "Delicious food and more!"
+    },
+    {
+        "nombre": "Victorina Garden House",
+        "direccion": "Av. Quito, Otavalo City",
+        "telefono": "+593 523 485 6789",
+        "sitioWeb": "https://www.facebook.com/p/Victorina-Garden-House-61558331080007/",
+        "imagen": "https://scontent.fuio1-2.fna.fbcdn.net/v/t39.30808-6/616016100_122223073190277702_9079996943750840955_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHKWHBiuXY_XW4vVd8jMbi65dK6svwLT2Pl0rqy_AtPY13ueY41rEQsTabkkVuu1_ccFXflOYSASBkKuxDzCfHp&_nc_ohc=Qq1gMHQ5ZvcQ7kNvwG468rQ&_nc_oc=AdpoB2LOxCjQG_nr8JfvEAJgxJOzfWiNSJb66VRSsI6CiQubky5FMpZqboDYG7vBSRXXX_vENmGkFrBtyWlKHYTn&_nc_zt=23&_nc_ht=scontent.fuio1-2.fna&_nc_gid=zLFMz5Z_uhIvprye5SRMgw&_nc_ss=7a32e&oh=00_AfwJ7GQXAtPhLxnzcWG98VWQ8PyKgQqWfEVO9IrrcISaSQ&oe=69C9459F",
+        "nivel": 2,
+        "descripcion": "Open 7pm - 11pm"
+    },
+    {
+        "nombre": "Gimnasio FitLife",
+        "direccion": "Av. Modesto Jaramillo, Otavalo City",
+        "telefono": "+593 554 334 5566",
+        "sitioWeb": "https://www.fitlife.com",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTgztTDfUW4rfh8eBpdBuV4_mSWDJCljAVjw&s",
+        "nivel": 3,
+        "descripcion": "Open 6am - 10pm"
+    },
+    {
+        "nombre": "Librería Mundo Libre",
+        "direccion": "Street Bolivar, Otavalo City",
+        "telefono": "+593 990 123 4567",
+        "sitioWeb": "https://www.mundolibre.com",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9bzfW26Gu5shjibi4pWRyPG_YhZ5yqz3SpA&s",
+        "nivel": 1,
+        "descripcion": "Open 9am - 6pm"
+    },
+    {
+        "nombre": "Security Taxi",
+        "direccion": "Street Bolivar and Av. Quito, Otavalo City",
+        "telefono": "+593 555 556 7788",
+        "sitioWeb": "https://www.facebook.com/p/Taxi-Seguro-100046497564104/",
+        "imagen": "https://scontent.fuio1-1.fna.fbcdn.net/v/t39.30808-1/305659313_591260185767228_7656387967064790013_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeGmdaGskgxD1DfhA6FJoJwWx06pJhr0nRjHTqkmGvSdGLPpXxLb7IKEIz1dy6SAdzKm69_28xlCZN7pnKAeUjyV&_nc_ohc=eBy6uSzzWMIQ7kNvwHWOtVA&_nc_oc=AdoW0dcJzD2Are5qQvH_JsNK4fXYNAParF-oFUoPlPVGFrOhLC9MCsDsfVQuKG2OWucjiypbJhxwIB9GnwwfHovw&_nc_zt=24&_nc_ht=scontent.fuio1-1.fna&_nc_gid=0KRPNziRqnru0kIcFU3xeg&_nc_ss=7a32e&oh=00_AfwyEq6zWi2YR0T8LJEGbj5pTMDu4dRTIgx-sWkhcYye0w&oe=69C923B8",
+        "nivel": 3,
+        "descripcion": "Service available 24/7"
+    }
+]

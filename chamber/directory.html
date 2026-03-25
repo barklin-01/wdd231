@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Barklin Gonzalez">
     <meta name="description" content="WDD 231-Desarrollo web frontend I-Page about the chamber of commerce of Otavalo">
-    <title>WDD 231-Desarrollo web frontend I-Barklin Gonzalez</title>
+    <title>Directory - WDD 231-Desarrollo web frontend I-Barklin Gonzalez</title>
     <!-- Meta de las redes sociales -->
     <meta property="og:title" content="Directory of the Chamber of Commerce of Otavalo">
-    <meta property="og:description" content="Find local businesses in Otavalo">
-    <meta property="og:image" content="images/logo.png">
-    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:description" content="Find local businesses in Otavalo with our directory. Support local commerce and discover the best services in town.">
+    <meta property="og:image" content="https://barklin-01.github.io/wdd231/chamber/chamberimg/ce.jpg">
+    <meta property="og:url" content="https://barklin-01.github.io/wdd231/chamber/directory.html">
 
     <link rel="stylesheet" href="chamber-styles/normalize.css">
     <link rel="stylesheet" href="chamber-styles/small.css">
     <link rel="stylesheet" href="chamber-styles/large.css">
     <script type="module" src="chamber-scripts/cham-course.js"></script>
-    <script type="module" src="chamber-scripts/cham-date.js"></script>
-    <script type="module" src="chamber-scripts/cham-navegation.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,11 +28,40 @@
 
 <body>
     
+    <header>
+        <img src="chamberimg/logo.png" alt="Logo of the page">
+        <span id="name-page">Otavalo Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Menu">&#9776;</button>
+        <nav class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Directory</a></li>
+                <li><a href="final.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h1>Directory </h1>
+        <div class="boton">
+            <button id="gridView">Grid View</button>
+            <button id="listView">List View</button>
+        </div>
+
+        <div id="membersContainer" class="grid"></div>
+        
+        <script src="script.js"></script>
 
     </main>
     <footer>
+        <div class="footer-left">
+            <p><strong>Timbuktu Chamber of Commerce</strong><br>
+                10 Rue De La Paix<br>
+                Timbuktu, Mali 999<br>
+                info@timbuktucc.org<br>
+                (223) 555-2300</p>
+        </div>
+
         <nav class="redes">
             <a href="https://github.com/barklin-01"><img src="chamberimg/github.svg" alt="GitHub"></a>
             <a href="https://www.linkedin.com/in/barklin-daniel-gonzalez-tuqerez/"><img src="chamberimg/linkedin.svg"
@@ -42,11 +69,14 @@
             <a href="https://www.facebook.com/barklin.gonzalez.5"> <img src="chamberimg/facebook.svg"
                     alt="Facebook Icon"></a>
             <a href="https://www.instagram.com/barklin_2003/"> <img src="chamberimg/instagram.svg" alt="Instagram Icon"></a>
-
         </nav>
-        <p class="foter">
-            © <span id="currentyear"></span> 🍀Barklin Daniel Gonzalez🍀Ecuador</p>
-        <p id="lastModified"></p>
+        <div class="footer-right">
+            <p>WDD 231  Class Project</p>
+            <p>Barklin Gonzalez</p>                
+            <p class="foter">
+                © <span id="currentyear"></span> 🍀Otavalo Chamber of Commerce🍀</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 

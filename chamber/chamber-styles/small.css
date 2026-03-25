@@ -1,0 +1,225 @@
+/*Variable*/
+:root {
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+    --color1: #050505;
+    --color2: #fdf9f9;
+    --color3: #173348;
+    --color4: #21425b;
+}
+
+/*Ancho de la pagina*/
+header,
+main,
+footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*body*/
+body {
+    font-family: var(--body-font);
+    background-color: var(--color2);
+}
+/* --- Header --- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color3);
+    position: relative;
+}
+
+/* Logo */
+header img {
+    width: 100px;
+    margin-left: 5px;
+}
+
+/* Nombre de la página */
+#name-page {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    flex-grow: 1;
+    color: var(--color2);
+}
+
+/* Botón de menú */
+#menu-button {
+    font-size: 1.85rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color2);
+    margin-right: 2rem;
+}
+
+/* Navegación */
+.links {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color4);
+    flex-direction: column;
+    color: var(--color2);
+
+}
+
+.links.open {
+    display: block;
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    padding: 1rem;
+    color: var(--color2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover,
+.links a:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+/* --- Footer --- */
+/*redes*/
+footer{
+    background-color: var(--color3);
+    color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+footer>div,
+footer>nav {
+    width: 100%;
+    text-align: start;
+    margin: 1rem auto 0 1rem;
+    
+}
+footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem 0;
+    background-color: none;
+    
+}
+
+footer .redes img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    
+}
+
+/* Efecto hover  */
+footer .redes img:hover {
+    transform: scale(1.2);
+}
+
+.foter,
+#lastModified {
+    font-size: 1rem;
+    text-align: start;
+    display: block;
+    padding: 2px 0;
+}
+/*Bod*/
+h1{
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 3px solid var(--color3);
+}
+.boton {
+    text-align: center;
+    margin-bottom: 20px;
+}
+button:hover {
+    background-color: var(--color1);
+    color: white;
+}
+/*-----Members-----*/
+
+#membersContainer.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.member-card {
+    border: 2px solid var(--color3);
+    border-radius: 4px;
+    padding: 10px;
+    width: 400px;
+}
+
+.member-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.member-card h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.2rem;
+}
+.member-card p {
+    font-size: 0.9rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.member-card a {
+    color: blue;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.member-card a:hover {
+    color: darkblue;
+}
+/*lista*/
+
+#membersContainer.list .member-card{
+    display: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#membersContainer.list .member-card img {
+    display: none;
+}
+
+#membersContainer.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
