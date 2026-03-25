@@ -207,17 +207,14 @@ button:hover {
     display: block;
     margin-bottom: 20px;
     width: 100%;
-}
-
-#membersContainer.list .member-card img {
-    display: none;
-}
-
-#membersContainer.list .member-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+#membersContainer.list .member-card img {
+    display: none;
 }
 
