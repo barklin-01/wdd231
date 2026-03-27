@@ -1,5 +1,5 @@
 // scripts/weather.js
-const apiKey = "ef5d19645c5733f585e21b13890b2acb";
+const apiKey = "7e7cfe48103c68d2460240aa93e2f850";
 const lat = 0.23461748513703862;
 const lon = -78.25930625605271;
 const units = "metric"; // Celsius
