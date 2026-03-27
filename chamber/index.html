@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Barklin Gonzalez">
     <meta name="description" content="WDD 231-Desarrollo web frontend I-Page about the chamber of commerce of Otavalo">
-    <title>Directory - WDD 231-Desarrollo web frontend I-Barklin Gonzalez</title>
+    <title>Home - WDD 231-Desarrollo web frontend I-Barklin Gonzalez</title>
     <!-- Meta de las redes sociales -->
-    <meta property="og:title" content="Directory of the Chamber of Commerce of Otavalo">
+    <meta property="og:title" content="This page is the Home of the Chamber of Commerce of Otavalo">
     <meta property="og:description"
-        content="Find local businesses in Otavalo with our directory. Support local commerce and discover the best services in town.">
+        content="Welcome to the official website of the Otavalo Chamber of Commerce. Discover local businesses, events, and resources to support our vibrant community. Join us in fostering economic growth and collaboration in Otavalo.">
     <meta property="og:image" content="https://barklin-01.github.io/wdd231/chamber/chamberimg/ce.jpg">
-    <meta property="og:url" content="https://barklin-01.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://barklin-01.github.io/wdd231/chamber/index.html">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/script.js" defer></script>
     <script type="module" src="scripts/cham-course.js"></script>
+    <script src="scripts/weather.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,10 +45,49 @@
         </nav>
     </header>
     <main>
-
-
-
+        <div class="hero">
+            <section>
+                <picture>
+                    <source srcset="images/Otavalo450.webp" media="(max-width: 600px)" type="image/webp">
+                    <source srcset="images/Otavalo800.webp" media="(max-width: 1200px)" type="image/webp">
+                    <source srcset="images/Otavalo1200.webp" type="image/webp">
+                    <img src="images/Otavalo1200.webp" alt="Fondo de pantalla de la pagina" loading="lazy">
+                </picture>
+                <div class="hero-text">
+                    <h1 class="title-1">Otavalo Connect</h1>
+                    <P class="sub1">Connecting Opportunities, Creating Experience </P>
+                </div>
+            </section>
+        </div>
+        <!-- Action Section -->
+        <section class="action">
+            <h2 class="titleaction">Ready to grow </h2>
+            <p class="ph">Don't waste any more time, join and grow your business today.</p>
+            <a class="tripbutton" href="join.html">Join Us!</a>
+        </section>
+        <!-- Events Section -->
+        <section id="events">
+            <h2>Current Events</h2>
+            <div class="event-list">
+                <article class="event-card">
+                    <h3>Pawkar Raimy</h3>
+                    <p><strong>📅 Date:</strong> 5 May, 2026</p>
+                    <p><strong>📍 Location:</strong> Peguche Coliseum </p>
+                    <p>An event to sing, dance and connect with indigenous culture.</p>
+                    <a href="event-details.html">More information</a>
+                </article>
+            </div>
+        </section>
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Current Weather in Otavalo</h2>
+            <p id="temp">Loading temperature...</p>
+            <p id="desc"></p>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="forecast"></p>
+        </section>
     </main>
+
     <footer>
         <div class="footer-left">
             <p><strong>Otavalo Chamber of Commerce</strong><br>
