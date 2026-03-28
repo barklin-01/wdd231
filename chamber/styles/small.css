@@ -15,7 +15,6 @@ footer {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
 }
 
 /*body*/
@@ -214,12 +213,12 @@ button:hover {
     display: none;
 }
 
-/*Hero*/
-/*Backround*/
+/*.....Index.html.....*/
+    /*Hero*/
+    /*Backround*/
 .hero {
     position: relative;
     width: 100%;
-    height: auto;
 }
 
 .hero img {
@@ -252,4 +251,56 @@ button:hover {
 }
 .hero-text .sub1 {
     font-size: 1.2rem;
+}
+/*----Action---*/
+
+.hero .action {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    width: 70%;
+    max-width: 350px;
+    height: auto;
+    text-align: center;
+    background: rgba(249, 253, 255, 0.427);
+    border: solid 3px var(--color3);
+}
+.t2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 10px;
+    right: 25px;
+    background-color:var(--color4);
+    padding: 10px;
+    color: #fff;
+}
+.pt {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #000;
+}
+.aboutbutton {
+    display: block;
+    width: 50%;
+    background:var(--color4);
+    margin: 20px auto 10px auto;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 0.95rem;
+    height: 50px;
+}
+
+.aboutbutton:hover {
+    background: rgba(21, 114, 108, 0.786);
+    transform: translateY(-2px);
 }
