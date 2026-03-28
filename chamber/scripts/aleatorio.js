@@ -32,7 +32,7 @@ async function loadSpotlights() {
         <h3>${member.nombre}</h3>
         <p>${member.direccion}</p>
         <p>${member.telefono}</p>
-        <a href="${member.sitioWeb}" target="_blank" rel="noopener noreferrer">Sitio Web</a>
+        <a href="${member.sitioWeb}" target="_blank" rel="noopener noreferrer">${member.sitioWeb}</a>
         <p>${member.descripcion}</p>
         `;
             container.appendChild(card);

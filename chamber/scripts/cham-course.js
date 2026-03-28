@@ -45,6 +45,3 @@ document.getElementById("listView").addEventListener("click", () => {
 // Cargar miembros al inicio
 fetchMembers();
 
-
-// ----------------------------------------------------------------------------------------------------
-//Empresar aleatorias

@@ -39,6 +39,24 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    /*Action*/
+    .cosas{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        
+    }
+    .event-card img{
+        height: 150px;
+    }
+    .weather-text p,
+    .forecast-weather p{
+        font-size: 1.2rem;
+    }
 
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }

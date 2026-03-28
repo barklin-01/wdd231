@@ -1,39 +1,33 @@
-// scripts/weather.js
 const apiKey = "7e7cfe48103c68d2460240aa93e2f850";
 const lat = 0.23461748513703862;
 const lon = -78.25930625605271;
-const units = "metric"; // Celsius
+const units = "metric"; // Lo dejamos en °C y convertimos a °F
+
+// Función para convertir °C a °F y redondear
+function cToF(celsius) {
+    return Math.round(celsius * 9 / 5 + 32);
+}
 
 async function getWeather() {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
 
     try {
         const response = await fetch(url);
-
-        if (!response.ok) {
-            if (response.status === 401) {
-                throw new Error("Unauthorized: Check your API key.");
-            } else if (response.status === 404) {
-                throw new Error("City not found: Check coordinates.");
-            } else if (response.status === 429) {
-                throw new Error("Too many requests: You are over the free plan limit.");
-            } else {
-                throw new Error(`HTTP Error: ${response.status}`);
-            }
-        }
+        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
 
         const data = await response.json();
-        console.log(data);
 
-        document.getElementById("temp").textContent = `Temperature: ${data.main.temp} °C`;
-        document.getElementById("desc").textContent = `Weather: ${data.weather[0].description}`;
+        const currentWeather = document.querySelector(".current-weather");
+        const tempF = cToF(data.main.temp);
+        currentWeather.querySelector("#temp").textContent = `Temperature: ${tempF} °F`;
+        currentWeather.querySelector("#desc").textContent = `Weather: ${data.weather[0].description}`;
         const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-        document.getElementById("weather-icon").src = iconSrc;
-        document.getElementById("weather-icon").alt = data.weather[0].description;
+        currentWeather.querySelector("#weather-icon").src = iconSrc;
+        currentWeather.querySelector("#weather-icon").alt = data.weather[0].description;
 
     } catch (error) {
         console.error(error);
-        document.getElementById("temp").textContent = error.message;
+        document.querySelector(".current-weather #temp").textContent = error.message;
     }
 }
 
@@ -45,20 +39,23 @@ async function getForecast() {
         if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
 
         const data = await response.json();
-        const forecastEl = document.getElementById("forecast");
+        const forecastContainer = document.querySelector(".forecast-weather");
+        forecastContainer.innerHTML = ""; // Limpiamos contenido
 
-        let forecastText = "3-Day Forecast:\n";
         for (let i = 0; i < 3; i++) {
             const item = data.list[i * 8]; // cada 8 entradas ≈ 1 día
             const date = new Date(item.dt * 1000);
-            forecastText += `${date.toDateString()}: ${item.main.temp} °C, ${item.weather[0].description}\n`;
-        }
+            const dayName = date.toDateString().split(" ")[0]; // Solo el día abreviado: "Sat", "Sun"...
+            const tempF = cToF(item.main.temp);
 
-        forecastEl.textContent = forecastText;
+            const p = document.createElement("p");
+            p.textContent = `${dayName}: ${tempF} °F`; // Solo día y temperatura
+            forecastContainer.appendChild(p);
+        }
 
     } catch (error) {
         console.error(error);
-        document.getElementById("forecast").textContent = error.message;
+        document.querySelector(".forecast-weather").textContent = error.message;
     }
 }
 
