@@ -13,7 +13,7 @@ document.querySelectorAll(".open-modal").forEach(link => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
         const modalId = link.parentElement.dataset.modal;
-        document.getElementById(modalId).style.display = "block";
+        document.getElementById(modalId).style.display = "flex";
     });
 });
 

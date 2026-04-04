@@ -45,85 +45,90 @@
         </nav>
     </header>
     <main>
-        <h1>Membership Application Form</h1>
-        
-        <form method="get" action="thankyou.html">
+        <div class="contenedor1">
+            <h1>Membership Application Form</h1>
             
-            <label>
-                First Name:
-                <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name">
-            </label>
-        
-            <label>
-                Last Name:
-                <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
-            </label>
-        
-            <label>
-                Organizational Title:
-                <input type="text" name="orgTitle" required title="Enter your organization title" autocomplete="organization-title"
-                    pattern="[A-Za-z\- ]{7,}">
-            </label>
-        
-            <label>
-                Email:
-                <input type="email" name="email" required title="Enter a valid email" autocomplete="email"
-                    placeholder="example@mail.com">
-            </label>
-        
-            <label>
-                Mobile Phone:
-                <input type="tel" name="phone" required title="Enter your mobile phone number" autocomplete="tel">
-            </label>
-        
-            <label>
-                Business / Organization Name:
-                <input type="text" name="organization" required title="Enter organization name" autocomplete="organization">
-            </label>
-        
-            <label>
-                Membership Level:
-                <select name="membership" required title="Select a membership level">
-                    <option value="">-- Choose One --</option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
-        
-            <label>
-                Business Description:
-                <textarea name="description" title="Describe your business"></textarea>
-            </label>
-        
-            <input type="hidden" name="timestamp" id="timestamp">
-        
-            <input type="submit" value="Submit Application">
-        
-        </form>
-        <h2>Membership Levels</h2>
-        <section class="cards">
-            <div class="card" data-modal="npModal">
-                <h3>NP Membership</h3>
-                <a href="#" class="open-modal">More Info</a>
-            </div>
-        
-            <div class="card" data-modal="bronzeModal">
-                <h3>Bronze Membership</h3>
-                <a href="#" class="open-modal">More Info</a>
-            </div>
-        
-            <div class="card" data-modal="silverModal">
-                <h3>Silver Membership</h3>
-                <a href="#" class="open-modal">More Info</a>
-            </div>
-        
-            <div class="card" data-modal="goldModal">
-                <h3>Gold Membership</h3>
-                <a href="#" class="open-modal">More Info</a>
-            </div>
-        </section>
+            <form method="get" action="thankyou.html">
+                
+                <label>
+                    First Name:
+                    <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name">
+                </label>
+            
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+                </label>
+            
+                <label>
+                    Organizational Title:
+                    <input type="text" name="orgTitle" required title="Enter your organization title" autocomplete="organization-title"
+                        pattern="[A-Za-z\- ]{7,}">
+                </label>
+            
+                <label>
+                    Email:
+                    <input type="email" name="email" required title="Enter a valid email" autocomplete="email"
+                        placeholder="example@mail.com">
+                </label>
+            
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" required title="Enter your mobile phone number" autocomplete="tel">
+                </label>
+            
+                <label>
+                    Business / Organization Name:
+                    <input type="text" name="organization" required title="Enter organization name" autocomplete="organization">
+                </label>
+            
+                <label>
+                    Membership Level:
+                    <select name="membership" required title="Select a membership level">
+                        <option value="">-- Choose One --</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+            
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+            
+                <input type="hidden" name="timestamp" id="timestamp">
+            
+                <input type="submit" value="Submit Application">
+            
+            </form>
+        </div>
+        <div class="contenedor2">
+            <h2>Membership Levels</h2>
+            <section class="cards">
+                
+                <div class="card" data-modal="npModal">
+                    <h3>NP Membership</h3>
+                    <a href="#" class="open-modal">More Info</a>
+                </div>
+            
+                <div class="card" data-modal="bronzeModal">
+                    <h3>Bronze Membership</h3>
+                    <a href="#" class="open-modal">More Info</a>
+                </div>
+            
+                <div class="card" data-modal="silverModal">
+                    <h3>Silver Membership</h3>
+                    <a href="#" class="open-modal">More Info</a>
+                </div>
+            
+                <div class="card" data-modal="goldModal">
+                    <h3>Gold Membership</h3>
+                    <a href="#" class="open-modal">More Info</a>
+                </div>
+            </section>
+        </div>
         
         <!-- MODALS -->
         <div id="npModal" class="modal">
