@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Barklin Gonzalez">
+    <meta name="description" content="WDD 231-Desarrollo web frontend I-Page about the chamber of commerce of Otavalo">
+    <title>Home - WDD 231-Desarrollo web frontend I-Barklin Gonzalez</title>
+    <!-- Meta de las redes sociales -->
+    <meta property="og:title" content="This page is the Home of the Chamber of Commerce of Otavalo">
+    <meta property="og:description"
+        content="Discover local businesses, events, and opportunities in Otavalo. Join the Chamber of Commerce and grow within our vibrant community.">
+    <meta property="og:image" content="https://barklin-01.github.io/wdd231/chamber/chamberimg/ce.jpg">
+    <meta property="og:url" content="https://barklin-01.github.io/wdd231/chamber/index.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/calendary.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap">
+
+    <link rel="icon" href="chamberimg/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.webp" alt="Logo of the page" width="100" height="100">
+        <span id="name-page">Otavalo Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Menu">&#9776;</button>
+        <nav class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="final.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Membership Application Form</h1>
+        
+        <form method="get" action="thankyou.html">
+            
+            <label>
+                First Name:
+                <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name">
+            </label>
+        
+            <label>
+                Last Name:
+                <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+            </label>
+        
+            <label>
+                Organizational Title:
+                <input type="text" name="orgTitle" required title="Enter your organization title" autocomplete="organization-title"
+                    pattern="[A-Za-z\- ]{7,}">
+            </label>
+        
+            <label>
+                Email:
+                <input type="email" name="email" required title="Enter a valid email" autocomplete="email"
+                    placeholder="example@mail.com">
+            </label>
+        
+            <label>
+                Mobile Phone:
+                <input type="tel" name="phone" required title="Enter your mobile phone number" autocomplete="tel">
+            </label>
+        
+            <label>
+                Business / Organization Name:
+                <input type="text" name="organization" required title="Enter organization name" autocomplete="organization">
+            </label>
+        
+            <label>
+                Membership Level:
+                <select name="membership" required title="Select a membership level">
+                    <option value="">-- Choose One --</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+        
+            <label>
+                Business Description:
+                <textarea name="description" title="Describe your business"></textarea>
+            </label>
+        
+            <input type="hidden" name="timestamp" id="timestamp">
+        
+            <input type="submit" value="Submit Application">
+        
+        </form>
+        
+        <section class="cards">
+            <div class="card" data-modal="npModal">
+                <h3>NP Membership</h3>
+                <a href="#" class="open-modal">More Info</a>
+            </div>
+        
+            <div class="card" data-modal="bronzeModal">
+                <h3>Bronze Membership</h3>
+                <a href="#" class="open-modal">More Info</a>
+            </div>
+        
+            <div class="card" data-modal="silverModal">
+                <h3>Silver Membership</h3>
+                <a href="#" class="open-modal">More Info</a>
+            </div>
+        
+            <div class="card" data-modal="goldModal">
+                <h3>Gold Membership</h3>
+                <a href="#" class="open-modal">More Info</a>
+            </div>
+        </section>
+        
+        <!-- MODALS -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <h2>NP Membership Benefits</h2>
+                <p id="npText"></p>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <h2>Bronze Membership Benefits</h2>
+                <p id="bronzeText"></p>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <h2>Silver Membership Benefits</h2>
+                <p id="silverText"></p>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <h2>Gold Membership Benefits</h2>
+                <p id="goldText"></p>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p><strong>Otavalo Chamber of Commerce</strong><br>
+                Otavalo, Ecuador<br>
+                barklin2003@gmail.com<br>
+                +593 993 912 331</p>
+        </div>
+
+        <nav class="redes">
+            <a href="https://github.com/barklin-01"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/barklin-daniel-gonzalez-tuqerez/"><img src="images/linkedin.svg"
+                    alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/barklin.gonzalez.5"> <img src="images/facebook.svg"
+                    alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/barklin_2003/"> <img src="images/instagram.svg" alt="Instagram Icon"></a>
+        </nav>
+        <div class="footer-right">
+            <p>WDD 231 Class Project</p>
+            <p>Barklin Gonzalez</p>
+            <p class="foter">
+                © <span id="currentyear"></span> 🍀Otavalo Chamber of Commerce🍀</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
