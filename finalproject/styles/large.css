@@ -1,0 +1,89 @@
+/*Variable*/
+:root {
+    --heading-font: "Amarante", serif;
+    --body-font: "Montserrat", sans-serif;
+    --color1: #fdf9f9;
+    --color2: #fe8181;
+    --color3: #ffffff;
+}
+
+/*body*/
+body {
+    font-family: var(--body-font);
+    background-color: var(--color1);
+}
+
+/*Ancho de la pagina*/
+header,
+main,
+footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+    padding: 10px;
+    gap: 20px;
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+p,
+li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+img:first-of-type {
+    width: 400px;
+    height: 600px;
+}
+
+img:last-of-type {
+    width: 80%;
+    height: 600px;
+}
+
+/*Footer*/
+footer {
+    font-size: 1.2rem;
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+}
+
+footer p {
+    margin: 5px 0;
+}
