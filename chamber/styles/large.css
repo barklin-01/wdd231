@@ -60,14 +60,7 @@
         margin-bottom: 20px;
     }
 
-    main {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        margin: 20px auto;
-        max-width: 1200px;
-        align-items: flex-start;
-    }
+
     .contenedor1,
     .contenedor2 {
         width: 100%;
@@ -75,7 +68,12 @@
     h2{
         font-size: 1.8rem;
     }
-
-    
-
+    .main {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+        align-items: flex-start;
+    }
 }
