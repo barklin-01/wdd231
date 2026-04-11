@@ -807,6 +807,10 @@ MODALES
 .discover button:hover {
     background: #307d92;
 }
+.discover h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
 #visit-message {
     background: #21425b;
     color: white;
