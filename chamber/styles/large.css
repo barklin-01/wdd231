@@ -77,3 +77,68 @@
         align-items: flex-start;
     }
 }
+@media (min-width: 1025px) {
+
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+    }
+
+    /* LAS CARDS MANTIENEN EL MISMO DISEÑO QUE MEDIUM */
+    .discover .card {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+            "title title"
+            "img text"
+            "btn btn";
+        gap: 6px;
+        padding: 10px;
+        align-items: center;
+        background: white;
+        border-radius: 12px;
+    }
+
+    .discover .card h2 {
+        grid-area: title;
+        margin: 0;
+        text-align: center;
+    }
+
+    .discover .card figure {
+        grid-area: img;
+        margin: 0;
+    }
+
+    .discover .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .discover .card img:hover {
+        transform: scale(1.05);
+    }
+    .discover .card .text {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: center;
+    }
+
+    .discover .card p,
+    .discover .card address {
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    .discover .card button {
+        grid-area: btn;
+        width: 60%;
+        justify-self: center;
+        margin-top: 4px;
+    }
+}

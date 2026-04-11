@@ -1,0 +1,76 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* CARD */
+    .discover .card {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+            "title title"
+            "img text"
+            "btn btn";
+        gap: 6px;
+        padding: 10px;
+        align-items: start;
+        background: white;
+        border-radius: 12px;
+        align-items: center;
+    }
+
+    /* TITLE */
+    .discover .card h2 {
+        grid-area: title;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* IMAGE */
+    .discover .card figure {
+        grid-area: img;
+        margin: 0;
+    }
+
+    .discover .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .discover .card img:hover {
+    transform: scale(1.05);
+    }
+
+    /* TEXT BLOCK (CLAVE) */
+    .discover .card .text {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    /* LIMPIEZA DE ESPACIOS */
+    .discover .card p,
+    .discover .card address {
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    /* COST */
+    .discover .card .cost {
+        font-weight: bold;
+    }
+
+    /* BUTTON */
+    .discover .card button {
+        grid-area: btn;
+        width: 100%;
+        margin-top: 4px;
+        justify-self: center;
+    }
+}
