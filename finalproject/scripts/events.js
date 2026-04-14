@@ -3,9 +3,9 @@ import { events } from "../data/events.mjs";
 document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.querySelector(".events");
-    const modal = document.querySelector("#eventModal");
-    const modalBody = document.querySelector("#modalBody");
-    const closeModal = document.querySelector("#closeModal");
+    const modal = document.querySelector("#eventmodal");
+    const modalBody = document.querySelector("#modalbody");
+    const closeModal = document.querySelector("#closemodal");
 
     function openModal(eventData) {
         modalBody.innerHTML = `

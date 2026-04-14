@@ -401,13 +401,13 @@ footer .redes img:hover {
 }
 
 /* contenido del modal */
-#modalBody h2 {
+#modalbody h2 {
     margin-top: 0;
     color: #fa3434;
     text-align: center;
 }
 
-#modalBody p {
+#modalbody p {
     margin: 8px 0;
     line-height: 1.5;
     text-align: center;
