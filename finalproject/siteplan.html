@@ -65,25 +65,29 @@
                 <a class="aboutbutton" href="store.html">Discover us!</a>
             </section>
             </div>
-            <h1>Home</h1>
-        <section class="suscribete">
-            <h2 class="t2">Subscribe to our page</h2>
-            <p class="pt">Receive exclusive offers, news and new products in your email or cellphone number.</p>
-            <form class="formulario">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
-        
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
-        
-                <label for="number">Phone Number</label>
-                <input type="tel" id="number" name="number" pattern="[0-9+\-\s]{7,20}">
-        
-                <button type="submit" class="button">Subscribe</button>
-            </form>
-        </section>
-        <section class="events"></section>
-
+            <h2 class="page1">Home</h2>
+            <div class="contenedor1">
+                <section class="suscribete">
+                            <h2 class="t2">Subscribe to our page</h2>
+                            <p class="pt">Receive exclusive offers, news and new products in your email or cellphone number.</p>
+                            <form class="formulario" method="get" action="thankyou.html">
+                                <input type="hidden" name="formType" value="subscribe">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" name="firstName" id="firstName" required>
+                        
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email">
+                        
+                                <label for="number">Phone Number</label>
+                                <input type="tel" id="number" name="number" pattern="[0-9+\-\s]{7,20}">
+                        
+                                <button type="submit" class="button">Subscribe</button>
+                            </form>
+                </section>
+                    <section class="events"></section>
+            </div>
+            <h2 class="page1">Products</h2>
+            <section class="random-product"></section>
         <!-- MODAL -->
         <div id="eventModal" class="modal hidden">
             <div class="modal-content">
@@ -91,7 +95,6 @@
                 <button id="closeModal" class="close-btn">Close</button>
             </div>
         </div>
-        <section class="random-product"></section>
     </main>
 
     <footer>

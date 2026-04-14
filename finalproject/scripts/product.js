@@ -59,7 +59,7 @@ buttons.forEach(button => {
 // iniciar
 loadProducts();
 
-// Radon producto aleatorio
+// Radon productos aleatorios
 async function loadRandomProduct() {
     try {
         const res = await fetch('data/products.json');
@@ -70,25 +70,37 @@ async function loadRandomProduct() {
 
         const products = await res.json();
 
-        // elegir 1 producto aleatorio
-        const random = products[Math.floor(Math.random() * products.length)];
+        // Elegir 3 productos aleatorios
+        const randomProducts = [];
+        while (randomProducts.length < 3) {
+            const random = products[Math.floor(Math.random() * products.length)];
+            if (!randomProducts.includes(random)) {
+                randomProducts.push(random);
+            }
+        }
 
-        displayRandomProduct(random);
+        displayRandomProducts(randomProducts);
 
     } catch (error) {
         console.error(error);
     }
 }
 
-function displayRandomProduct(product) {
+function displayRandomProducts(products) {
     const container = document.querySelector('.random-product');
 
+    if (!container) return;
+
     container.innerHTML = `
-        <div class="card random-card">
-            <h2>${product.name}</h2>
-            <img src="${product.image}" alt="${product.name}">
-            <p class="price"><strong>$${product.price}</strong></p>
-            <p class="description">${product.description}</p>
+        <div class="random-products-row">
+            ${products.map(product => `
+                <div class="random-card">
+                    <!-- Enlace alrededor de la imagen -->
+                    <a href="store.html?productId=${product.id}" class="random-card-link">
+                        <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    </a>
+                </div>
+            `).join('')}
         </div>
     `;
 }

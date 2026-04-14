@@ -85,6 +85,9 @@ h1 {
     text-align: center;
     margin: 10px;
 }
+.hero{
+    margin-bottom: 10px;
+}
 .hero,
 .suscribete {
     position: relative;
@@ -414,8 +417,8 @@ footer .redes img:hover {
 .random-product {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 95%;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 10px 0;
 }
 .random-product img {
     width: 100%;
@@ -423,4 +426,86 @@ footer .redes img:hover {
     object-fit: cover;
     padding: 10px;
 }
+/*h2 title from siteplan*/
+.page1 {
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
 /*-----Contact us-----*/
+
+.herotext {
+
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #fdf2f2;
+    color: #050505;
+    font-family: var(--heading-font);
+    z-index: 10;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+/*Information*/
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+}
+
+form {
+    background: rgb(249, 230, 230);
+    padding: 15px;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+form input[type="submit"] {
+    display: block;
+    background-color: var(--color2);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c62828;
+}
