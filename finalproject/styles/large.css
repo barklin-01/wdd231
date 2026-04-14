@@ -37,7 +37,6 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         width: 100%;
-        gap: none;
         margin: 0;
         padding: 0;
     }
