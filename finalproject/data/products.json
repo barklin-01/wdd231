@@ -1,0 +1,250 @@
+[
+    {
+        "id": 1,
+        "name": "Inti Sisa Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo1.webp",
+        "description": "Inspired by the flower of the sun, warm and vibrant design."
+    },
+    {
+        "id": 2,
+        "name": "Kawsay Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo2.webp",
+        "description": "Represents life and harmony with nature."
+    },
+    {
+        "id": 3,
+        "name": "Ñusta Blanca Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo3.webp",
+        "description": "Elegant white blouse inspired by the Andean princess."
+    },
+    {
+        "id": 4,
+        "name": "Raymi Dorado Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo4.webp",
+        "description": "Golden tones inspired by Andean celebrations."
+    },
+    {
+        "id": 5,
+        "name": "Taita Sol Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo5.webp",
+        "description": "Tribute to the father sun, full of energy and light."
+    },
+    {
+        "id": 6,
+        "name": "Pacha Rosa Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo6.webp",
+        "description": "Soft pink tones inspired by Mother Earth."
+    },
+    {
+        "id": 7,
+        "name": "Chimborazo Floral Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo7.webp",
+        "description": "Floral design inspired by the Andean mountains."
+    },
+    {
+        "id": 8,
+        "name": "Kañari Luna Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo8.webp",
+        "description": "Mystical blouse inspired by the Kañari moon."
+    },
+    {
+        "id": 9,
+        "name": "Ñawi Bordada Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo9.webp",
+        "description": "Embroidered details that reflect ancestral eyes."
+    },
+    {
+        "id": 10,
+        "name": "Sumak Vida Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo10.webp",
+        "description": "Beautiful life expressed through traditional design."
+    },
+    {
+        "id": 11,
+        "name": "Amarun Sutil Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo11.webp",
+        "description": "Subtle serpent-inspired symbolic design."
+    },
+    {
+        "id": 12,
+        "name": "Sisa del Valle Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo12.webp",
+        "description": "Flower of the valley with natural elegance."
+    },
+    {
+        "id": 13,
+        "name": "Andina Elegante Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo13.webp",
+        "description": "Classic elegance inspired by the Andes."
+    },
+    {
+        "id": 14,
+        "name": "Pumapungo Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo14.webp",
+        "description": "Inspired by ancient Inca heritage and strength."
+    },
+    {
+        "id": 15,
+        "name": "Warmi Encanto Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo15.webp",
+        "description": "Feminine charm and Andean beauty combined."
+    },
+    {
+        "id": 16,
+        "name": "Kapak Nieve Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo16.webp",
+        "description": "Sacred snow design representing purity."
+    },
+    {
+        "id": 17,
+        "name": "Sol de Cañar Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo17.webp",
+        "description": "Warm sun-inspired blouse from Cañar region."
+    },
+    {
+        "id": 18,
+        "name": "Flor de Pacha Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo18.webp",
+        "description": "Earth flower symbolizing natural beauty."
+    },
+    {
+        "id": 19,
+        "name": "Tupu Dorado Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo19.webp",
+        "description": "Golden pin-inspired traditional elegance."
+    },
+    {
+        "id": 20,
+        "name": "Killa Blanca Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo20.webp",
+        "description": "White moon representing calm and purity."
+    },
+    {
+        "id": 21,
+        "name": "Wayra Suave Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo21.webp",
+        "description": "Soft wind-inspired light design."
+    },
+    {
+        "id": 22,
+        "name": "Inka Moderna Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo22.webp",
+        "description": "Modern style with Inca cultural roots."
+    },
+    {
+        "id": 23,
+        "name": "Cañari Tradición Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo23.webp",
+        "description": "Honoring the traditional Cañari heritage."
+    },
+    {
+        "id": 24,
+        "name": "Sacha Flor Blouse",
+        "price": 35,
+        "category": "mujer",
+        "image": "images/modelo24.webp",
+        "description": "Forest flower with natural freshness."
+    },
+    {
+        "id": 25,
+        "name": "Taita Cumbre Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo25.webp",
+        "description": "Mountain peak inspired powerful design."
+    },
+    {
+        "id": 26,
+        "name": "Rayos del Inti Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo26.webp",
+        "description": "Sun rays bringing energy and warmth."
+    },
+    {
+        "id": 27,
+        "name": "Ñusta Celeste Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo27.webp",
+        "description": "Celestial princess-inspired soft elegance."
+    },
+    {
+        "id": 28,
+        "name": "Kawsay Bordada Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo28.webp",
+        "description": "Life expressed through embroidery details."
+    },
+    {
+        "id": 29,
+        "name": "Pacha Viva Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo29.jpg",
+        "description": "Living earth celebrating nature."
+    },
+    {
+        "id": 30,
+        "name": "Sol Andino Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo30.webp",
+        "description": "Andean sun full of strength and light."
+    },
+    {
+        "id": 31,
+        "name": "Sumak Ñawi Blouse",
+        "price": 35,
+        "category": "niña",
+        "image": "images/modelo31.webp",
+        "description": "Beautiful eyes reflecting ancestral wisdom."
+    }
+]

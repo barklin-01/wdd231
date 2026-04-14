@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231-Final Project about a store call Barkline">
+    <meta name="author" content="Barklin Gonzalez">
+    <title>Barkline - Barklin Gonzalez</title>
+        <!-- Meta de las redes sociales -->
+    <meta property="og:title" content="This page is about the online store called Barkline">
+    <meta property="og:description"
+        content="Discover Barkline, an online store offering a wide range of products. Explore our collection and find what you need with ease.">
+    <meta property="og:image" content="https://barklin-01.github.io/wdd231/chamber/chamberimg/ce.jpg">
+    <meta property="og:url" content="https://barklin-01.github.io/wdd231/chamber/index.html">
+    <!--Links de estilos y scripts -->
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script type="module" src="scripts/events.js"></script>
+    <script type="module" src="scripts/product.js"></script>
+
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <img src="images/logo1.webp" alt="Logo of the store">
+            <span id="name-page"> Online Store | Barkline</span>
+            <button id="menu-button" aria-label="Menu">&#9776;</button>
+        <nav class="links">
+            <ul>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <section>
+                <picture>
+                    <source srcset="images/header1.webp" media="(max-width: 600px)" type="image/webp">
+                    <source srcset="images/header3.webp" media="(max-width: 1200px)" type="image/webp">
+                    <source srcset="images/header2.webp" type="image/webp">
+                    <img src="images/header3.webp" alt="Fondo de pantalla de la pagina" loading="lazy">
+                </picture>
+                <div class="hero-text">
+                    <h1 class="title-1">BARKLINE</h1>
+                    <P class="sub1">CULTURE AND TRADITION</P>
+                </div>
+        
+            </section>
+            <section class="about">
+                <h2 class="t2">We create your Kichwa Legacy</h2>
+                <p class="pt">Unique designs, elegant colors, one-of-a-kind styles just for you</p>
+                <a class="aboutbutton" href="store.html">Discover us!</a>
+            </section>
+            </div>
+            <h1>Home</h1>
+        <section class="suscribete">
+            <h2 class="t2">Subscribe to our page</h2>
+            <p class="pt">Receive exclusive offers, news and new products in your email or cellphone number.</p>
+            <form class="formulario">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+        
+                <label for="number">Phone Number</label>
+                <input type="tel" id="number" name="number" pattern="[0-9+\-\s]{7,20}">
+        
+                <button type="submit" class="button">Subscribe</button>
+            </form>
+        </section>
+        <section class="events"></section>
+
+        <!-- MODAL -->
+        <div id="eventModal" class="modal hidden">
+            <div class="modal-content">
+                <div id="modalBody"></div>
+                <button id="closeModal" class="close-btn">Close</button>
+            </div>
+        </div>
+        <section class="random-product"></section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p><strong>Barkline Online Store</strong><br>
+                Otavalo, Ecuador<br>
+                barklin2003@gmail.com<br>
+                +593 993 912 331</p>
+        </div>
+    
+        <nav class="redes">
+            <a href="https://github.com/barklin-01"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/barklin-daniel-gonzalez-tuqerez/"><img src="images/linkedin.svg"
+                    alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/barklin.gonzalez.5"> <img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/barklin_2003/"> <img src="images/instagram.svg" alt="Instagram Icon"></a>
+        </nav>
+        <div class="footer-right">
+            <p>WDD 231 Class Project</p>
+            <p>Barklin Gonzalez</p>
+            <p class="foter">
+                © <span id="currentyear"></span> 🍀Barkline Online Store🍀</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+:root {
+    --heading-font: "Amarante", serif;
+    --body-font: "Montserrat", sans-serif;
+    --color1: #fdf9f9;
+    --color2: #fe8181;
+    --color3: #ffffff;
+}
+/*Ancho de la pagina*/
+header,
+main,
+footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+body {
+    font-family: var(--body-font);
+    background-color: var(--color1);
+}
+/*--------------Header-----------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color2);
+    position: relative;
+    height: auto;
+    padding: 0;
+}
+/* Logo */
+header img {
+    width: 100px;
+    height: auto;
+    margin-left: 5px;
+    padding: 5px;
+}
+/* Nombre de la página */
+#name-page {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    flex-grow: 1;
+    color: var(--color3);
+    font-family: var(--heading-font);
+}
+/* Botón de menú */
+#menu-button {
+    font-size: 1.85rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color3);
+    margin-right: 2rem;
+}
+/* Navegación */
+.links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color2);
+    flex-direction: column;
+    color: var(--color3);
+}
+.links.open {
+    display: block;
+    text-align: center;
+}
+.links a {
+    display: block;
+    padding: 1rem;
+    color: var(--color3);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.links a:hover,
+.links a:active {
+    background-color: rgba(244, 185, 185, 0.208);
+    transition: background-color 0.3s ease;
+}
+/*-----------body------------------*/
+h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 10px;
+}
+.hero,
+.suscribete {
+    position: relative;
+    width: 100%;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.hero-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #fdf2f2;
+    color: #050505;
+    font-family: var(--heading-font);
+    z-index: 10;
+    margin: 0;
+    opacity: 0.7;
+}
+.hero-text .title-1 {
+    font-size: 2.5rem;
+}
+
+.hero-text .sub1{
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+.suscribete {
+    position: static;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid var(--color2);
+    backdrop-filter: blur(5px);
+}
+/*Descubrenos*/
+.hero .about {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    width: 70%;
+    max-width: 350px;
+    height: auto;
+    text-align: center;
+    background: rgba(249, 253, 255, 0.427);
+    border: solid 3px #e72424;
+}
+.t2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 10px;
+    right: 25px;
+    background-color: #fa3434;
+    padding: 10px;
+    color: #fff;
+}
+
+.pt {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.aboutbutton {
+    display: block;
+    width: 50%;
+    background: #fa3434;
+    margin: 20px auto 10px auto;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 0.95rem;
+    height: 50px;
+}
+
+.aboutbutton:hover {
+    background: rgba(220, 81, 26, 0.786);
+    transform: translateY(-2px);
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.formulario input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid;
+    outline: none;
+    font-size: 0.95rem;
+}
+.hero .button,
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #fa3434;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero .button:hover,
+button:hover {
+    background: rgba(220, 81, 26, 0.786);
+    transform: translateY(-2px);
+}
+/* --- Footer --- */
+/*redes*/
+footer {
+    background-color: var(--color2);
+    color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+footer>div,
+footer>nav {
+    width: 100%;
+    text-align: start;
+    margin: 1rem auto 0 1rem;
+
+}
+
+footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem 0;
+    margin-left: 5PX;
+
+}
+
+footer .redes img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s;
+
+}
+
+/* Efecto hover  */
+footer .redes img:hover {
+    transform: scale(1.2);
+}
+
+.foter,
+#lastModified {
+    font-size: 1rem;
+    text-align: start;
+    display: block;
+    padding: 2px 0;
+}
+
+/*Filtros  de all, mujer y niña*/
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.filters button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #fa3434;
+    color: white;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #c62828;
+}
+/*Cards*/
+
+.store {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.store img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card {
+    background-color: rgb(255, 248, 239);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--color2);
+}
+
+.card h2 {
+    display: block;
+    background-color: var(--color2);
+    color: var(--color3);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.price,
+.description {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*Eventoooos*/
+.events {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: static;
+    max-width: 95%;
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid var(--color2);
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+}
+.event-card .info-btn {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+/* Modal */
+/* ===== MODAL BACKGROUND ===== */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* clase para ocultar */
+.hidden {
+    display: none;
+}
+
+/* ===== MODAL BOX ===== */
+.modal-content {
+    background: #fff;
+    width: 85%;
+    height: auto;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--color2);
+}
+.close-btn {
+    margin-top: 15px;
+    align-self: center;
+    background: #fa3434;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #c62828;
+}
+
+/* contenido del modal */
+#modalBody h2 {
+    margin-top: 0;
+    color: #fa3434;
+    text-align: center;
+}
+
+#modalBody p {
+    margin: 8px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*Card de productos random*/
+.random-product {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 95%;
+    margin: 20px auto;
+}
+.random-product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px;
+}
+/*-----Contact us-----*/
