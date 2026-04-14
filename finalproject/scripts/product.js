@@ -15,7 +15,15 @@ async function loadProducts() {
         const data = await response.json();
         allProducts = data;
 
-        displayProducts(allProducts);
+        // revisar si hay filtro guardado
+        const savedCategory = localStorage.getItem("selectedCategory");
+
+        if (savedCategory && savedCategory !== "all") {
+            const filtered = allProducts.filter(product => product.category === savedCategory);
+            displayProducts(filtered);
+        } else {
+            displayProducts(allProducts);
+        }
 
     } catch (error) {
         console.error(error);
@@ -45,7 +53,11 @@ function displayProducts(products) {
 // FILTROS
 buttons.forEach(button => {
     button.addEventListener('click', () => {
+
         const category = button.dataset.category;
+
+        // guardar categoría en localStorage
+        localStorage.setItem("selectedCategory", category);
 
         if (category === "all") {
             displayProducts(allProducts);
@@ -53,6 +65,7 @@ buttons.forEach(button => {
             const filtered = allProducts.filter(product => product.category === category);
             displayProducts(filtered);
         }
+
     });
 });
 
